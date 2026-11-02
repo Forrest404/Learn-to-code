@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Will Shoots | Photography</title>
+  <meta name="description" content="Photography portfolio by Will Shoots. Click a photo to view it large and enquire.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Will Shoots</h1>
+    <p>Photography</p>
+  </header>
+
+  <main>
+    <div class="grid" id="grid">
+      <button class="thumb" data-index="0"><img src="photos/photo-1.jpeg" alt="Photograph 1 by Will Shoots" loading="lazy"></button>
+      <button class="thumb" data-index="1"><img src="photos/photo-2.jpeg" alt="Photograph 2 by Will Shoots" loading="lazy"></button>
+      <button class="thumb" data-index="2"><img src="photos/photo-3.jpeg" alt="Photograph 3 by Will Shoots" loading="lazy"></button>
+      <button class="thumb" data-index="3"><img src="photos/photo-4.jpeg" alt="Photograph 4 by Will Shoots" loading="lazy"></button>
+      <button class="thumb" data-index="4"><img src="photos/photo-5.jpeg" alt="Photograph 5 by Will Shoots" loading="lazy"></button>
+    </div>
+  </main>
+
+  <footer>
+    <p>Interested in a photo or a shoot? <a href="mailto:willshoots@gmail.com?subject=Photography%20enquiry">willshoots@gmail.com</a></p>
+  </footer>
+
+  <div class="lightbox" id="lightbox" hidden role="dialog" aria-modal="true" aria-label="Photo viewer">
+    <button class="lb-close" id="lb-close" aria-label="Close">&times;</button>
+    <button class="lb-nav lb-prev" id="lb-prev" aria-label="Previous photo">&#8249;</button>
+    <figure>
+      <img id="lb-img" src="" alt="">
+      <a class="enquire" id="lb-enquire" href="mailto:willshoots@gmail.com">Enquire</a>
+    </figure>
+    <button class="lb-nav lb-next" id="lb-next" aria-label="Next photo">&#8250;</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
